@@ -1,0 +1,431 @@
+{
+  "drink_preferences_national": [
+    {
+      "drink": "Cappuccino",
+      "share_pct": 28,
+      "category": "Milk-based"
+    },
+    {
+      "drink": "Latte",
+      "share_pct": 27,
+      "category": "Milk-based"
+    },
+    {
+      "drink": "Flat White",
+      "share_pct": 18,
+      "category": "Milk-based"
+    },
+    {
+      "drink": "Long Black",
+      "share_pct": 9,
+      "category": "Black"
+    },
+    {
+      "drink": "Mocha",
+      "share_pct": 7,
+      "category": "Milk-based"
+    },
+    {
+      "drink": "Macchiato",
+      "share_pct": 5,
+      "category": "Milk-based"
+    },
+    {
+      "drink": "Espresso",
+      "share_pct": 3,
+      "category": "Black"
+    },
+    {
+      "drink": "Cold Brew",
+      "share_pct": 2,
+      "category": "Cold"
+    },
+    {
+      "drink": "Other",
+      "share_pct": 1,
+      "category": "Other"
+    }
+  ],
+  "drink_by_state": [
+    {
+      "state": "NSW",
+      "drink": "Latte",
+      "index": 112
+    },
+    {
+      "state": "NSW",
+      "drink": "Flat White",
+      "index": 105
+    },
+    {
+      "state": "NSW",
+      "drink": "Cappuccino",
+      "index": 94
+    },
+    {
+      "state": "NSW",
+      "drink": "Long Black",
+      "index": 88
+    },
+    {
+      "state": "VIC",
+      "drink": "Latte",
+      "index": 108
+    },
+    {
+      "state": "VIC",
+      "drink": "Flat White",
+      "index": 115
+    },
+    {
+      "state": "VIC",
+      "drink": "Cappuccino",
+      "index": 96
+    },
+    {
+      "state": "VIC",
+      "drink": "Long Black",
+      "index": 102
+    },
+    {
+      "state": "QLD",
+      "drink": "Latte",
+      "index": 98
+    },
+    {
+      "state": "QLD",
+      "drink": "Flat White",
+      "index": 91
+    },
+    {
+      "state": "QLD",
+      "drink": "Cappuccino",
+      "index": 118
+    },
+    {
+      "state": "QLD",
+      "drink": "Long Black",
+      "index": 86
+    },
+    {
+      "state": "WA",
+      "drink": "Latte",
+      "index": 103
+    },
+    {
+      "state": "WA",
+      "drink": "Flat White",
+      "index": 99
+    },
+    {
+      "state": "WA",
+      "drink": "Cappuccino",
+      "index": 107
+    },
+    {
+      "state": "WA",
+      "drink": "Long Black",
+      "index": 96
+    },
+    {
+      "state": "SA",
+      "drink": "Latte",
+      "index": 95
+    },
+    {
+      "state": "SA",
+      "drink": "Flat White",
+      "index": 88
+    },
+    {
+      "state": "SA",
+      "drink": "Cappuccino",
+      "index": 122
+    },
+    {
+      "state": "SA",
+      "drink": "Long Black",
+      "index": 91
+    }
+  ],
+  "home_brewing_equipment": [
+    {
+      "equipment": "Pod / Capsule machine",
+      "pct": 48
+    },
+    {
+      "equipment": "Drip / filter machine",
+      "pct": 31
+    },
+    {
+      "equipment": "Manual espresso",
+      "pct": 20
+    },
+    {
+      "equipment": "Plunger / French press",
+      "pct": 18
+    },
+    {
+      "equipment": "Stovetop Moka pot",
+      "pct": 12
+    },
+    {
+      "equipment": "AeroPress / pour-over",
+      "pct": 9
+    },
+    {
+      "equipment": "Bean-to-cup machine",
+      "pct": 7
+    }
+  ],
+  "cafe_vs_home_by_generation": [
+    {
+      "generation": "Gen Z (18\u201327)",
+      "year": 2019,
+      "cafe_pct": 61,
+      "home_pct": 39
+    },
+    {
+      "generation": "Gen Z (18\u201327)",
+      "year": 2023,
+      "cafe_pct": 55,
+      "home_pct": 45
+    },
+    {
+      "generation": "Millennial (28\u201343)",
+      "year": 2019,
+      "cafe_pct": 53,
+      "home_pct": 47
+    },
+    {
+      "generation": "Millennial (28\u201343)",
+      "year": 2023,
+      "cafe_pct": 48,
+      "home_pct": 52
+    },
+    {
+      "generation": "Gen X (44\u201359)",
+      "year": 2019,
+      "cafe_pct": 38,
+      "home_pct": 62
+    },
+    {
+      "generation": "Gen X (44\u201359)",
+      "year": 2023,
+      "cafe_pct": 35,
+      "home_pct": 65
+    },
+    {
+      "generation": "Boomer (60\u201378)",
+      "year": 2019,
+      "cafe_pct": 33,
+      "home_pct": 67
+    },
+    {
+      "generation": "Boomer (60\u201378)",
+      "year": 2023,
+      "cafe_pct": 30,
+      "home_pct": 70
+    }
+  ],
+  "daily_cups_by_generation": [
+    {
+      "generation": "Gen Z",
+      "avg_cups": 1.9
+    },
+    {
+      "generation": "Millennial",
+      "avg_cups": 2.8
+    },
+    {
+      "generation": "Gen X",
+      "avg_cups": 3.1
+    },
+    {
+      "generation": "Boomer",
+      "avg_cups": 2.6
+    },
+    {
+      "generation": "Builder 75+",
+      "avg_cups": 1.8
+    }
+  ],
+  "coffee_time_of_day": [
+    {
+      "time_slot": "5\u20137am",
+      "popularity": 12
+    },
+    {
+      "time_slot": "7\u20139am",
+      "popularity": 68
+    },
+    {
+      "time_slot": "9\u201311am",
+      "popularity": 52
+    },
+    {
+      "time_slot": "11am\u20131pm",
+      "popularity": 28
+    },
+    {
+      "time_slot": "1\u20133pm",
+      "popularity": 22
+    },
+    {
+      "time_slot": "3\u20135pm",
+      "popularity": 31
+    },
+    {
+      "time_slot": "5\u20137pm",
+      "popularity": 11
+    },
+    {
+      "time_slot": "7\u20139pm",
+      "popularity": 5
+    }
+  ],
+  "price_by_city": [
+    {
+      "city": "Sydney",
+      "flat_white_aud": 5.8
+    },
+    {
+      "city": "Melbourne",
+      "flat_white_aud": 5.5
+    },
+    {
+      "city": "Brisbane",
+      "flat_white_aud": 5.2
+    },
+    {
+      "city": "Perth",
+      "flat_white_aud": 5.4
+    },
+    {
+      "city": "Adelaide",
+      "flat_white_aud": 5.1
+    },
+    {
+      "city": "Hobart",
+      "flat_white_aud": 5.0
+    },
+    {
+      "city": "Canberra",
+      "flat_white_aud": 5.3
+    },
+    {
+      "city": "Darwin",
+      "flat_white_aud": 5.6
+    }
+  ],
+  "drink_chord": {
+    "states": [
+      "NSW",
+      "VIC",
+      "QLD",
+      "WA",
+      "SA"
+    ],
+    "drinks": [
+      "Latte",
+      "Flat White",
+      "Cappuccino",
+      "Long Black",
+      "Espresso"
+    ],
+    "matrix": [
+      [
+        112,
+        105,
+        94,
+        88,
+        96
+      ],
+      [
+        108,
+        118,
+        92,
+        95,
+        104
+      ],
+      [
+        95,
+        98,
+        122,
+        82,
+        88
+      ],
+      [
+        102,
+        110,
+        96,
+        108,
+        98
+      ],
+      [
+        96,
+        100,
+        115,
+        86,
+        94
+      ]
+    ]
+  },
+  "roast_pipeline": [
+    {
+      "equipment": "Pod / Capsule",
+      "drink": "Latte",
+      "pct": 22
+    },
+    {
+      "equipment": "Pod / Capsule",
+      "drink": "Long Black",
+      "pct": 12
+    },
+    {
+      "equipment": "Pod / Capsule",
+      "drink": "Cappuccino",
+      "pct": 14
+    },
+    {
+      "equipment": "Manual espresso",
+      "drink": "Flat White",
+      "pct": 14
+    },
+    {
+      "equipment": "Manual espresso",
+      "drink": "Cappuccino",
+      "pct": 6
+    },
+    {
+      "equipment": "Manual espresso",
+      "drink": "Espresso",
+      "pct": 8
+    },
+    {
+      "equipment": "Drip / filter",
+      "drink": "Long Black",
+      "pct": 10
+    },
+    {
+      "equipment": "Drip / filter",
+      "drink": "Americano",
+      "pct": 7
+    },
+    {
+      "equipment": "Plunger / French press",
+      "drink": "Long Black",
+      "pct": 7
+    },
+    {
+      "equipment": "AeroPress",
+      "drink": "Espresso",
+      "pct": 5
+    },
+    {
+      "equipment": "Stovetop Moka",
+      "drink": "Cappuccino",
+      "pct": 4
+    }
+  ]
+}

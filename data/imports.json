@@ -1,0 +1,26 @@
+{
+  "import_value_by_year": [
+    { "year": 2013, "import_value_aud_m": 578, "consumption_bags_m": 1.62 },
+    { "year": 2014, "import_value_aud_m": 612, "consumption_bags_m": 1.68 },
+    { "year": 2015, "import_value_aud_m": 649, "consumption_bags_m": 1.71 },
+    { "year": 2016, "import_value_aud_m": 681, "consumption_bags_m": 1.75 },
+    { "year": 2017, "import_value_aud_m": 724, "consumption_bags_m": 1.82 },
+    { "year": 2018, "import_value_aud_m": 768, "consumption_bags_m": 1.88 },
+    { "year": 2019, "import_value_aud_m": 810, "consumption_bags_m": 1.94 },
+    { "year": 2020, "import_value_aud_m": 792, "consumption_bags_m": 1.96 },
+    { "year": 2021, "import_value_aud_m": 872, "consumption_bags_m": 2.01 },
+    { "year": 2022, "import_value_aud_m": 1045, "consumption_bags_m": 2.06 },
+    { "year": 2023, "import_value_aud_m": 1190, "consumption_bags_m": 2.09 },
+    { "year": 2024, "import_value_aud_m": 1340, "consumption_bags_m": 2.10 }
+  ],
+  "import_share_by_country": [
+    { "country": "Brazil",     "share_pct": 32, "type": "Arabica",  "lat": -14.2, "lon": -51.9  },
+    { "country": "Colombia",   "share_pct": 18, "type": "Arabica",  "lat": 4.6,   "lon": -74.3  },
+    { "country": "Vietnam",    "share_pct": 15, "type": "Robusta",  "lat": 14.1,  "lon": 108.3  },
+    { "country": "Indonesia",  "share_pct": 10, "type": "Mixed",    "lat": -0.8,  "lon": 113.9  },
+    { "country": "Ethiopia",   "share_pct": 8,  "type": "Arabica",  "lat": 9.1,   "lon": 40.5   },
+    { "country": "Guatemala",  "share_pct": 6,  "type": "Arabica",  "lat": 15.8,  "lon": -90.2  },
+    { "country": "Papua New Guinea", "share_pct": 5, "type": "Arabica", "lat": -6.3, "lon": 143.9 },
+    { "country": "Other",      "share_pct": 6,  "type": "Various",  "lat": 0,     "lon": 0      }
+  ]
+}

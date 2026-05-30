@@ -1,0 +1,331 @@
+{
+  "market_value_usd_b": [
+    {
+      "year": 2020,
+      "value_usd_b": 1.82,
+      "type": "Historical"
+    },
+    {
+      "year": 2021,
+      "value_usd_b": 1.98,
+      "type": "Historical"
+    },
+    {
+      "year": 2022,
+      "value_usd_b": 2.11,
+      "type": "Historical"
+    },
+    {
+      "year": 2023,
+      "value_usd_b": 2.28,
+      "type": "Historical"
+    },
+    {
+      "year": 2024,
+      "value_usd_b": 2.38,
+      "type": "Historical"
+    },
+    {
+      "year": 2025,
+      "value_usd_b": 2.44,
+      "type": "Historical"
+    },
+    {
+      "year": 2026,
+      "value_usd_b": 2.58,
+      "type": "Projected"
+    },
+    {
+      "year": 2027,
+      "value_usd_b": 2.72,
+      "type": "Projected"
+    },
+    {
+      "year": 2028,
+      "value_usd_b": 2.87,
+      "type": "Projected"
+    },
+    {
+      "year": 2029,
+      "value_usd_b": 3.03,
+      "type": "Projected"
+    },
+    {
+      "year": 2030,
+      "value_usd_b": 3.2,
+      "type": "Projected"
+    },
+    {
+      "year": 2031,
+      "value_usd_b": 3.37,
+      "type": "Projected"
+    }
+  ],
+  "market_segments_2025": [
+    {
+      "segment": "Instant Coffee",
+      "share_pct": 38,
+      "growth_cagr": 2.1
+    },
+    {
+      "segment": "Roasted / Ground",
+      "share_pct": 27,
+      "growth_cagr": 3.8
+    },
+    {
+      "segment": "Pods / Capsules",
+      "share_pct": 18,
+      "growth_cagr": 5.2
+    },
+    {
+      "segment": "Specialty Coffee",
+      "share_pct": 10,
+      "growth_cagr": 7.7
+    },
+    {
+      "segment": "Ready-to-Drink",
+      "share_pct": 7,
+      "growth_cagr": 11.4
+    }
+  ],
+  "consumption_trend": [
+    {
+      "year": 2015,
+      "bags_m": 1.71
+    },
+    {
+      "year": 2016,
+      "bags_m": 1.75
+    },
+    {
+      "year": 2017,
+      "bags_m": 1.82
+    },
+    {
+      "year": 2018,
+      "bags_m": 1.88
+    },
+    {
+      "year": 2019,
+      "bags_m": 1.94
+    },
+    {
+      "year": 2020,
+      "bags_m": 1.96
+    },
+    {
+      "year": 2021,
+      "bags_m": 2.01
+    },
+    {
+      "year": 2022,
+      "bags_m": 2.06
+    },
+    {
+      "year": 2023,
+      "bags_m": 2.09
+    },
+    {
+      "year": 2024,
+      "bags_m": 2.1
+    }
+  ],
+  "specialty_vs_conventional": [
+    {
+      "year": 2019,
+      "specialty_pct": 5.2,
+      "conventional_pct": 94.8
+    },
+    {
+      "year": 2020,
+      "specialty_pct": 6.1,
+      "conventional_pct": 93.9
+    },
+    {
+      "year": 2021,
+      "specialty_pct": 7.0,
+      "conventional_pct": 93.0
+    },
+    {
+      "year": 2022,
+      "specialty_pct": 8.2,
+      "conventional_pct": 91.8
+    },
+    {
+      "year": 2023,
+      "specialty_pct": 9.4,
+      "conventional_pct": 90.6
+    },
+    {
+      "year": 2024,
+      "specialty_pct": 10.8,
+      "conventional_pct": 89.2
+    },
+    {
+      "year": 2025,
+      "specialty_pct": 12.0,
+      "conventional_pct": 88.0
+    }
+  ],
+  "sankey_journey": {
+    "nodes": [
+      {
+        "id": 0,
+        "name": "Brazil"
+      },
+      {
+        "id": 1,
+        "name": "Colombia"
+      },
+      {
+        "id": 2,
+        "name": "Vietnam"
+      },
+      {
+        "id": 3,
+        "name": "Indonesia"
+      },
+      {
+        "id": 4,
+        "name": "Ethiopia"
+      },
+      {
+        "id": 5,
+        "name": "Other Origins"
+      },
+      {
+        "id": 6,
+        "name": "Arabica"
+      },
+      {
+        "id": 7,
+        "name": "Robusta"
+      },
+      {
+        "id": 8,
+        "name": "Mixed"
+      },
+      {
+        "id": 9,
+        "name": "Milk-based"
+      },
+      {
+        "id": 10,
+        "name": "Black coffee"
+      },
+      {
+        "id": 11,
+        "name": "Instant"
+      },
+      {
+        "id": 12,
+        "name": "Caf\u00e9 cup"
+      },
+      {
+        "id": 13,
+        "name": "Home brew"
+      },
+      {
+        "id": 14,
+        "name": "RTD can"
+      }
+    ],
+    "links": [
+      {
+        "source": 0,
+        "target": 6,
+        "value": 32
+      },
+      {
+        "source": 1,
+        "target": 6,
+        "value": 18
+      },
+      {
+        "source": 4,
+        "target": 6,
+        "value": 8
+      },
+      {
+        "source": 5,
+        "target": 6,
+        "value": 7
+      },
+      {
+        "source": 2,
+        "target": 7,
+        "value": 15
+      },
+      {
+        "source": 3,
+        "target": 8,
+        "value": 10
+      },
+      {
+        "source": 6,
+        "target": 9,
+        "value": 40
+      },
+      {
+        "source": 6,
+        "target": 10,
+        "value": 15
+      },
+      {
+        "source": 6,
+        "target": 11,
+        "value": 10
+      },
+      {
+        "source": 7,
+        "target": 11,
+        "value": 12
+      },
+      {
+        "source": 7,
+        "target": 9,
+        "value": 3
+      },
+      {
+        "source": 8,
+        "target": 9,
+        "value": 7
+      },
+      {
+        "source": 8,
+        "target": 11,
+        "value": 3
+      },
+      {
+        "source": 9,
+        "target": 12,
+        "value": 28
+      },
+      {
+        "source": 9,
+        "target": 13,
+        "value": 22
+      },
+      {
+        "source": 10,
+        "target": 12,
+        "value": 8
+      },
+      {
+        "source": 10,
+        "target": 13,
+        "value": 7
+      },
+      {
+        "source": 11,
+        "target": 13,
+        "value": 18
+      },
+      {
+        "source": 11,
+        "target": 14,
+        "value": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "state": "NSW",
+    "state_full": "New South Wales",
+    "cafes": 18200,
+    "revenue_aud_b": 28.4,
+    "coffee_drinkers_pct": 73,
+    "cafes_per_100k": 218
+  },
+  {
+    "state": "VIC",
+    "state_full": "Victoria",
+    "cafes": 16100,
+    "revenue_aud_b": 24.1,
+    "coffee_drinkers_pct": 76,
+    "cafes_per_100k": 236
+  },
+  {
+    "state": "QLD",
+    "state_full": "Queensland",
+    "cafes": 9800,
+    "revenue_aud_b": 14.2,
+    "coffee_drinkers_pct": 72,
+    "cafes_per_100k": 185
+  },
+  {
+    "state": "WA",
+    "state_full": "Western Australia",
+    "cafes": 5400,
+    "revenue_aud_b": 8.1,
+    "coffee_drinkers_pct": 79,
+    "cafes_per_100k": 194
+  },
+  {
+    "state": "SA",
+    "state_full": "South Australia",
+    "cafes": 3200,
+    "revenue_aud_b": 4.6,
+    "coffee_drinkers_pct": 74,
+    "cafes_per_100k": 175
+  },
+  {
+    "state": "TAS",
+    "state_full": "Tasmania",
+    "cafes": 1100,
+    "revenue_aud_b": 1.5,
+    "coffee_drinkers_pct": 71,
+    "cafes_per_100k": 196
+  },
+  {
+    "state": "ACT",
+    "state_full": "Australian Capital Territory",
+    "cafes": 980,
+    "revenue_aud_b": 1.8,
+    "coffee_drinkers_pct": 78,
+    "cafes_per_100k": 214
+  },
+  {
+    "state": "NT",
+    "state_full": "Northern Territory",
+    "cafes": 420,
+    "revenue_aud_b": 0.6,
+    "coffee_drinkers_pct": 68,
+    "cafes_per_100k": 158
+  }
+]
