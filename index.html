@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>From Bean to Brew: How Coffee Became Australia's Favourite Obsession</title>
+  <meta name="description" content="A data visualisation exploring Australia's coffee culture." />
+  <meta name="author" content="Rishi" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+
+  <nav class="sticky-nav" aria-label="Page sections">
+    <div class="sticky-nav__inner">
+      <a href="#obsession">The Obsession</a>
+      <a href="#cafes">Cafe Map</a>
+      <a href="#drinks">Drinks</a>
+      <a href="#spending">Spending</a>
+      <a href="#origins">Bean Origins</a>
+      <a href="#journey">The Journey</a>
+      <a href="#athome">At Home</a>
+      <a href="#market">Market</a>
+      <a href="#future">Future</a>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <!-- HERO -->
+    <header class="hero">
+      <p class="hero__eyebrow">
+        FIT2179 Data Visualisation 2
+        <span class="sep">&#183;</span>
+        Australian Coffee Culture
+        <span class="sep">&#183;</span>
+        Monash University, 2026
+      </p>
+      <h1 class="hero__title">
+        From Bean to Brew:<br>
+        <em>How Coffee Became Australia's Favourite Obsession</em>
+      </h1>
+      <p class="hero__subtitle">
+        A data-driven journey through the cups, cafes, and culture behind one nation's most beloved daily ritual.
+      </p>
+      <div class="hero__stats" role="region" aria-label="Key statistics">
+        <div class="hero__stat">
+          <span class="hero__stat-num">16.3M</span>
+          <span class="hero__stat-label">Cups brewed daily</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">75%</span>
+          <span class="hero__stat-label">Australians drink coffee daily</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">$2.44B</span>
+          <span class="hero__stat-label">Market value (USD, 2025)</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">55,000+</span>
+          <span class="hero__stat-label">Cafes &amp; restaurants (2024)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1: THE OBSESSION -->
+    <section class="story-section" id="obsession" aria-labelledby="h-obsession">
+      <p class="section__label">Chapter 1 <span class="sep">&#183;</span> The Obsession</p>
+      <h2 class="section__heading" id="h-obsession">A Nation Hooked on Coffee</h2>
+      <p class="section__lead">
+        Australia's love affair with coffee is decades in the making. Once a tea-drinking nation shaped by its British heritage, Australia underwent a quiet revolution in the 1960s when Italian and Greek immigrants brought espresso culture to Melbourne's cafes. Today, <strong>75% of Australian adults</strong> drink at least one cup a day. Even a global pandemic couldn't break the habit; it simply moved it indoors, with home consumption surging 37% in 2020.
+      </p>
+
+      <!-- VIS 1: Consumption trend -->
+      <div class="vis-container">
+        <p class="vis-container__title">A steady rise in consumption</p>
+        <div class="vis-controls">
+          <label for="vis1-start">From</label>
+          <select id="vis1-start">
+            <option value="2015" selected>2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+          </select>
+          <label for="vis1-end">to</label>
+          <select id="vis1-end">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024" selected>2024</option>
+          </select>
+          <span class="ctrl-hint">Hover bars for values.</span>
+        </div>
+        <div id="vis1" class="vega-chart"></div>
+        <p class="vis-caption">
+          Figure 1 &#8212; Domestic coffee consumption (million 60&#8202;kg bags), 2015&#8211;2024.
+          Source: Australian Bureau of Statistics (ABS) via Statista, 2024.
+        </p>
+      </div>
+
+      <div class="pull-quote">
+        <p>"Coffee has become a cultural identifier in Australia &#8212; it is no longer just a beverage, but a ritual, a social glue, and a statement of taste."</p>
+        <cite>IBISWorld, Cafes &amp; Coffee Shops in Australia Industry Report, 2024</cite>
+      </div>
+
+      <!-- VIS 2 + VIS 3: side by side -->
+      <div class="vis-grid-2">
+        <div class="vis-container">
+          <p class="vis-container__title">Radial Coffee Clock</p>
+          <p class="vis-container__subtitle">Relative popularity of coffee by time of day. Bar length = popularity.</p>
+          <div id="vis2" class="custom-svg-chart" style="min-height:300px;"></div>
+          <p class="vis-caption">
+            Figure 2 &#8212; Relative coffee consumption by time of day.
+            Source: Roy Morgan Research, Coffee Drinking Habits in Australia, 2023.
+          </p>
+        </div>
+        <div class="vis-container">
+          <p class="vis-container__title">Who drinks the most?</p>
+          <p class="vis-container__subtitle">Gen X leads daily consumption; Gen Z is catching up fast.</p>
+          <div id="vis3" class="custom-svg-chart" style="min-height:240px;"></div>
+          <p class="vis-caption">
+            Figure 3 &#8212; Average daily cups consumed by generation.
+            Source: Coffee Association of Australia, Annual Consumer Survey, 2023.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CAFE GEOGRAPHY -->
+    <section class="story-section" id="cafes" aria-labelledby="h-cafes">
+      <p class="section__label">Chapter 2 <span class="sep">&#183;</span> The Landscape</p>
+      <h2 class="section__heading" id="h-cafes">A Cafe on Every Corner &#8212; Almost</h2>
+      <p class="section__lead">
+        With over 55,000 cafes and restaurants operating in 2024, Australia's coffee shop landscape is dense and fiercely independent &#8212; 95% of all coffee establishments are independently owned. New South Wales and Victoria together account for more than half of all establishments, while Melbourne has earned a global reputation as a coffee capital.
+      </p>
+
+      <!-- VIS 4: Choropleth map -->
+      <div class="vis-container">
+        <p class="vis-container__title">Victoria and NSW dominate the cafe scene</p>
+        <p class="vis-container__subtitle">Hover over each state to see detailed figures.</p>
+        <div id="vis4" class="vega-chart"></div>
+        <p class="vis-caption">
+          Figure 4 &#8212; Number of cafes and restaurants by Australian state/territory, 2024.
+          Source: IBISWorld / Australian Bureau of Statistics, 2024.
+        </p>
+      </div>
+
+      <div class="stat-row" role="region" aria-label="State coffee statistics">
+        <div class="stat-card">
+          <span class="stat-card__num">95%</span>
+          <span class="stat-card__label">Independently owned cafes</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">VIC</span>
+          <span class="stat-card__label">Melbourne: most cafes per capita</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">NSW</span>
+          <span class="stat-card__label">Largest total cafe count</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">WA</span>
+          <span class="stat-card__label">Highest daily coffee drinker share</span>
+        </div>
+      </div>
+
+      <!-- VIS 5: Small multiple state cards -->
+      <div class="vis-container">
+        <p class="vis-container__title">Small Multiple State Cards</p>
+        <p class="vis-container__subtitle">Each card shows revenue, cafe count, density per 100k people, and daily drinker share for that state.</p>
+        <div id="vis5" class="state-cards-grid"></div>
+        <p class="vis-caption">
+          Figure 5 &#8212; Cafe and restaurant metrics by Australian state, 2024.
+          Source: IBISWorld / Australian Bureau of Statistics, 2024.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: DRINK PREFERENCES -->
+    <section class="story-section" id="drinks" aria-labelledby="h-drinks">
+      <p class="section__label">Chapter 3 <span class="sep">&#183;</span> The Cup</p>
+      <h2 class="section__heading" id="h-drinks">Latte, Flat White, or Cappuccino?</h2>
+      <p class="section__lead">
+        Ask an Australian their coffee order and you'll get a highly specific answer. Unlike many countries where black coffee dominates, Australians overwhelmingly prefer milk-based espresso drinks. The cappuccino leads nationally, though the latte rules the cafe counter by sales volume. The flat white &#8212; Australia's own invention &#8212; sits in third place, beloved by those who want their coffee to taste like coffee.
+      </p>
+
+      <!-- VIS 6 + VIS 7: drink tiles and bubble matrix -->
+      <div class="vis-grid-2">
+        <div class="vis-container">
+          <p class="vis-container__title">What Australia orders</p>
+          <p class="vis-container__subtitle">Tile area proportional to market share. Hover to explore.</p>
+          <div id="vis6" class="vega-chart vega-center"></div>
+          <p class="vis-caption">
+            Figure 6 &#8212; Most popular coffee drinks among Australians, 2023.
+            Source: Statista / Square Australia Cafe Sales Data, 2023.
+          </p>
+        </div>
+        <div class="vis-container">
+          <p class="vis-container__title">State-by-state differences</p>
+          <p class="vis-container__subtitle">Bubble size and colour = popularity index. 100 = national average.</p>
+          <div id="vis7" class="vega-chart"></div>
+          <p class="vis-caption">
+            Figure 7 &#8212; Relative drink popularity by state, indexed to national average.
+            Source: Square Australia, Coffee Insights Report, 2023.
+          </p>
+        </div>
+      </div>
+
+      <!-- Coffee Culture Network (Chord) -->
+      <div class="vis-container">
+        <p class="vis-container__title">Coffee Culture Network: State-Drink Affinity Chord Diagram</p>
+        <p class="vis-container__subtitle">Each arc segment is a state. Chords connect states to the drinks they over-index on. Thicker chord = stronger affinity.</p>
+        <div id="vis-chord" class="custom-svg-chart"></div>
+        <p class="vis-caption">
+          Figure 8 &#8212; Drink affinity chord diagram by Australian state. Index values derived from Square Australia Coffee Insights Report, 2023.
+        </p>
+      </div>
+
+      <div class="annotation">
+        <strong>The flat white debate:</strong> The flat white was invented in either Australia or New Zealand &#8212; both countries still argue about it. It differs from a latte by using a ristretto (shorter, more concentrated) shot and a thinner layer of steamed milk, producing a stronger, more coffee-forward flavour. It has since been adopted by Starbucks worldwide, cementing its status as one of Australia's most significant cultural exports.
+      </div>
+    </section>
+
+    <!-- SECTION 4: SPENDING -->
+    <section class="story-section" id="spending" aria-labelledby="h-spending">
+      <p class="section__label">Chapter 4 <span class="sep">&#183;</span> The Cost</p>
+      <h2 class="section__heading" id="h-spending">What We Pay for Our Daily Fix</h2>
+      <p class="section__lead">
+        Coffee in Australia is not cheap. The average flat white costs around $5.50 and the average Australian coffee drinker spends roughly <strong>$1,268 per year</strong> on cafe coffee alone. Despite cost-of-living pressures squeezing household budgets in 2023&#8211;24, coffee spending proved remarkably resilient. Prices vary considerably by city, with Sydney consistently topping the charts.
+      </p>
+
+      <!-- VIS 8: Dumbbell price chart -->
+      <div class="vis-container">
+        <p class="vis-container__title">Sydney pays the most for a flat white</p>
+        <p class="vis-container__subtitle">Each bar shows the gap from the city's price to the national average ($5.36). Dark = above average.</p>
+        <div id="vis8" class="vega-chart"></div>
+        <p class="vis-caption">
+          Figure 9 &#8212; Average flat white price by capital city, 2024 (AUD).
+          Source: Finder Australia / Numbeo Cost of Living Index, 2024.
+        </p>
+      </div>
+
+      <!-- VIS 9: Dual-axis import chart -->
+      <div class="vis-container">
+        <p class="vis-container__title">Coffee imports more than doubled in a decade</p>
+        <div class="vis-controls">
+          <label for="vis9-start">From</label>
+          <select id="vis9-start">
+            <option value="2013" selected>2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+          </select>
+          <label for="vis9-end">to</label>
+          <select id="vis9-end">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024" selected>2024</option>
+          </select>
+          <span class="ctrl-hint">Bars = import value (AUD M). Line = consumption volume (M bags).</span>
+        </div>
+        <div id="vis9" class="vega-chart"></div>
+        <p class="vis-caption">
+          Figure 10 &#8212; Coffee import value into Australia, 2013&#8211;2024 (AUD millions).
+          Source: Australian Bureau of Statistics, International Trade in Goods and Services, 2024.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 5: GLOBAL ORIGINS -->
+    <section class="story-section" id="origins" aria-labelledby="h-origins">
+      <p class="section__label">Chapter 5 <span class="sep">&#183;</span> The Origins</p>
+      <h2 class="section__heading" id="h-origins">Australia's Coffee Comes From Around the World</h2>
+      <p class="section__lead">
+        Australia produces only about 600 tonnes of coffee domestically &#8212; a fraction of its annual consumption of nearly 126,000 tonnes. Brazil and Colombia supply the bulk of Australia's green Arabica beans. Vietnam's Robusta fuels the instant coffee market, while Ethiopia, Guatemala, and Papua New Guinea supply the growing specialty segment. In 2024, a 50-year peak in global green coffee prices sent import costs surging 77%.
+      </p>
+
+      <!-- VIS 10: Bean Origin Flight Map -->
+      <div class="vis-container">
+        <p class="vis-container__title">Bean Origin Flight Map</p>
+        <p class="vis-container__subtitle">Lines connect each origin country to Australia. Line thickness = import share. Bubble size = import volume. Colour = bean type.</p>
+        <div class="vis-controls">
+          <label for="vis10-type">Filter by bean type</label>
+          <select id="vis10-type">
+            <option value="All" selected>All types</option>
+            <option value="Arabica">Arabica</option>
+            <option value="Robusta">Robusta</option>
+            <option value="Mixed">Mixed</option>
+          </select>
+          <span class="ctrl-hint">Hover bubbles for detail.</span>
+        </div>
+        <div id="vis10" class="vega-chart"></div>
+        <p class="vis-caption">
+          Figure 11 &#8212; Origins of coffee imported to Australia by share of import volume, 2023.
+          Source: Australian Bureau of Statistics, International Trade Statistics, 2023.
+        </p>
+      </div>
+
+      <!-- VIS 11: Sunburst -->
+      <div class="vis-container">
+        <p class="vis-container__title">A diverse sourcing mix</p>
+        <p class="vis-container__subtitle">Inner ring = bean type. Outer ring = country of origin. Hover to explore.</p>
+        <div id="vis11" class="vega-chart vega-center"></div>
+        <p class="vis-caption">
+          Figure 12 &#8212; Composition of Australian coffee imports by country and bean type, 2023 (normalised).
+          Source: Australian Bureau of Statistics, International Trade Statistics, 2023.
+        </p>
+      </div>
+
+      <!-- Origin table -->
+      <div class="vis-container">
+        <p class="vis-container__title">Key import countries at a glance</p>
+        <table class="origin-table" aria-label="Coffee import countries">
+          <thead>
+            <tr>
+              <th>Country</th><th>Bean type</th><th>Share of imports</th><th>Notable flavour profile</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>&#127463;&#127479; Brazil</td><td>Arabica (green)</td><td>~32%</td><td>Nutty, chocolatey, low acidity</td></tr>
+            <tr><td>&#127464;&#127476; Colombia</td><td>Arabica (green)</td><td>~18%</td><td>Caramel, red fruit, mild</td></tr>
+            <tr><td>&#127483;&#127475; Vietnam</td><td>Robusta (green)</td><td>~15%</td><td>Strong, earthy &#8212; used in instant blends</td></tr>
+            <tr><td>&#127470;&#127465; Indonesia</td><td>Mixed</td><td>~10%</td><td>Full-bodied, spice and earth notes</td></tr>
+            <tr><td>&#127466;&#127481; Ethiopia</td><td>Arabica (specialty)</td><td>~8%</td><td>Floral, citrus, blueberry</td></tr>
+            <tr><td>&#127468;&#127481; Guatemala</td><td>Arabica (specialty)</td><td>~6%</td><td>Cocoa, dried fruit, smoky</td></tr>
+            <tr><td>&#127477;&#127468; Papua New Guinea</td><td>Arabica (specialty)</td><td>~5%</td><td>Tropical fruit, bright acidity</td></tr>
+            <tr><td>Other countries</td><td>Various</td><td>~6%</td><td>&#8212;</td></tr>
+          </tbody>
+        </table>
+        <p class="vis-caption" style="margin-top: 0.75rem;">
+          Figure 13 (table) &#8212; Coffee import composition by country of origin, 2023.
+          Source: Australian Bureau of Statistics, International Trade Statistics, 2023.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 6: THE JOURNEY -->
+    <section class="story-section" id="journey" aria-labelledby="h-journey">
+      <p class="section__label">Chapter 6 <span class="sep">&#183;</span> The Journey</p>
+      <h2 class="section__heading" id="h-journey">From Bean to Cup: The Full Story</h2>
+      <p class="section__lead">
+        Every cup of Australian coffee traces a path across continents. Beans grown in Brazil, Ethiopia, or Vietnam are imported, roasted, and brewed through a range of equipment into the drink in your hand. The Coffee Journey Sankey diagram traces that full flow &#8212; from origin, through bean type and drink category, to the final format of consumption.
+      </p>
+
+      <!-- VIS SANKEY: Coffee Journey -->
+      <div class="vis-container">
+        <p class="vis-container__title">Coffee Journey Sankey Diagram</p>
+        <p class="vis-container__subtitle">Flows trace bean origins through bean type and drink category to how Australians consume their coffee. Width encodes volume share (%). Hover over flows for detail.</p>
+        <div id="vis-sankey" class="custom-svg-chart custom-svg-chart--tall"></div>
+        <p class="vis-caption">
+          Figure 14 &#8212; Sankey flow diagram: bean origin to consumption format, 2023.
+          Source: ABS International Trade Statistics; Roy Morgan Research; Coffee Association of Australia, 2023.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 7: AT HOME -->
+    <section class="story-section" id="athome" aria-labelledby="h-athome">
+      <p class="section__label">Chapter 7 <span class="sep">&#183;</span> The Home Brew</p>
+      <h2 class="section__heading" id="h-athome">Bringing the Cafe Home</h2>
+      <p class="section__lead">
+        COVID-19 accelerated a trend already quietly underway: Australians bringing barista-quality coffee into their own kitchens. Home consumption surged 37% during the pandemic. Today, 65% of Australian households own a coffee machine, and pod machines now account for 41% of all coffee consumed at home. The Roast-to-Cup Pipeline shows how different equipment channels flow into different drinks.
+      </p>
+
+      <!-- VIS 12: Roast-to-Cup Pipeline (Sankey/Alluvial) -->
+      <div class="vis-container">
+        <p class="vis-container__title">Roast-to-Cup Pipeline</p>
+        <p class="vis-container__subtitle">Flows connect home brewing equipment (left) to the drinks they produce (right). Width = share of home coffee prepared that way.</p>
+        <div id="vis12" class="custom-svg-chart"></div>
+        <p class="vis-caption">
+          Figure 15 &#8212; Home brewing equipment to drink type flow, 2023 (% of home coffee).
+          Source: Roy Morgan Research / Coffee Association of Australia, Consumer Survey 2023.
+        </p>
+      </div>
+
+      <!-- VIS 13: Bump/rank chart -->
+      <div class="vis-container">
+        <p class="vis-container__title">Every generation shifted toward home coffee after 2019</p>
+        <p class="vis-container__subtitle">Each line tracks a generation's rank by cafe preference. Rank 1 = most cafe-focused. All generations fell.</p>
+        <div id="vis13" class="vega-chart"></div>
+        <p class="vis-caption">
+          Figure 16 &#8212; Preference for cafe vs. home coffee by generation, 2019 and 2023.
+          Source: Square Australia / Coffee Association of Australia, 2023.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 8: THE MARKET -->
+    <section class="story-section" id="market" aria-labelledby="h-market">
+      <p class="section__label">Chapter 8 <span class="sep">&#183;</span> The Industry</p>
+      <h2 class="section__heading" id="h-market">A $2.4 Billion Industry &#8212; and Growing</h2>
+      <p class="section__lead">
+        The Australian coffee market was valued at USD 2.44 billion in 2025 and is projected to reach USD 3.37 billion by 2031, growing at a compound annual rate of 5.55%. The fastest-growing segment is ready-to-drink (RTD) canned coffee &#8212; growing at 11.4% annually &#8212; driven by Gen Z convenience preferences. Specialty coffee is next at 7.7% CAGR, while instant coffee &#8212; still the largest segment by volume &#8212; is growing slowly as tastes sophisticate.
+      </p>
+
+      <!-- VIS 14: Marimekko -->
+      <div class="vis-container">
+        <p class="vis-container__title">Smaller segments are growing fastest</p>
+        <p class="vis-container__subtitle">Column width = market share. Column height = annual growth rate (CAGR %). Darker = faster growing. Area = combined importance.</p>
+        <div id="vis14" class="vega-chart"></div>
+        <p class="vis-caption">
+          Figure 17 &#8212; Australian coffee market share by segment and growth rate, 2025.
+          Source: Mordor Intelligence, Australian Coffee Market Report, 2025; IBISWorld, 2025.
+        </p>
+      </div>
+
+      <!-- VIS 15: Streamgraph -->
+      <div class="vis-container">
+        <p class="vis-container__title">Specialty coffee is quietly taking over</p>
+        <p class="vis-container__subtitle">Streamgraph: how the balance between conventional and specialty coffee has shifted since 2019.</p>
+        <div id="vis15" class="vega-chart"></div>
+        <p class="vis-caption">
+          Figure 18 &#8212; Market share of specialty vs. conventional coffee, 2019&#8211;2025.
+          Source: Mordor Intelligence, Australian Coffee Market Report, 2025.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 9: THE FUTURE -->
+    <section class="story-section" id="future" aria-labelledby="h-future">
+      <p class="section__label">Chapter 9 <span class="sep">&#183;</span> What's Next</p>
+      <h2 class="section__heading" id="h-future">Where Is the Cup Going?</h2>
+      <p class="section__lead">
+        The next chapter of Australian coffee is being written by specialty roasters, cold brew innovators, and a generation of Gen Z consumers as likely to order a nitro cold brew as a cappuccino. Climate change threatens coffee-growing regions worldwide, and 2024's 50-year price peak may be a preview of what's to come. Whatever happens, Australians will find a way to get their coffee.
+      </p>
+
+      <!-- VIS 16: Market projection trajectory -->
+      <div class="vis-container">
+        <p class="vis-container__title">The market is set to reach $3.37 billion by 2031</p>
+        <p class="vis-container__subtitle">Solid line = historical data. Dashed line = projected growth (CAGR 5.55%). Each point is a year milestone.</p>
+        <div id="vis16" class="vega-chart"></div>
+        <p class="vis-caption">
+          Figure 19 &#8212; Australian coffee market value (USD billions), historical 2020&#8211;2025 and projected 2026&#8211;2031.
+          Source: Mordor Intelligence, Australian Coffee Market Report 2025&#8211;2031.
+        </p>
+      </div>
+
+      <div class="annotation">
+        <strong>Looking ahead:</strong> Specialty coffees (organic, single-origin, direct-trade) are growing at a CAGR of 7.7% and are projected to take an increasingly large slice of the market by 2031 &#8212; driven by younger, ethically conscious consumers who treat their coffee purchase as an expression of values. Ready-to-drink formats, meanwhile, are the fastest-growing segment at 11.4% CAGR, set to reshape how Australians consume coffee on the go.
+      </div>
+
+      <div class="pull-quote" style="margin-top: 3rem;">
+        <p>"Whatever the price, whatever the technology, whatever the trend &#8212; Australia will not give up its coffee. The question is only what form the next cup will take."</p>
+        <cite>Author's conclusion, based on ABS, IBISWorld &amp; Mordor Intelligence data, 2025</cite>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" aria-label="Attribution and sources">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p>From Bean to Brew</p>
+          <span>FIT2179 Data Visualisation 2</span>
+          <span>Monash University, Semester 1, 2026</span>
+          <span>Author: Rishi</span>
+          <span>Published: May 2026</span>
+          <br>
+          <span>All Vega-Lite visualisations created with <a href="https://vega.github.io/vega-lite/" target="_blank" rel="noopener">Vega-Lite v5</a>. Custom diagrams (Sankey, Chord, Pipeline, State Cards) built with native SVG and JavaScript.</span>
+          <br><br>
+          <span>AI tools used for grammar/style checking and code assistance. All visualisation designs, data selection, and editorial choices are the author's own.</span>
+        </div>
+        <div class="footer__sources">
+          <h4>Data Sources</h4>
+          <ul>
+            <li><strong>Australian Bureau of Statistics (ABS)</strong> &#8212; International Trade in Goods and Services; Cafes &amp; Restaurants data, 2013&#8211;2024. <a href="https://www.abs.gov.au" target="_blank" rel="noopener">abs.gov.au</a></li>
+            <li><strong>IBISWorld</strong> &#8212; Cafes &amp; Coffee Shops in Australia Industry Report, 2024. <a href="https://www.ibisworld.com/au" target="_blank" rel="noopener">ibisworld.com/au</a></li>
+            <li><strong>Mordor Intelligence</strong> &#8212; Australian Coffee Market Report 2025&#8211;2031. <a href="https://www.mordorintelligence.com/industry-reports/australia-coffee-market" target="_blank" rel="noopener">mordorintelligence.com</a></li>
+            <li><strong>Statista</strong> &#8212; Domestic coffee consumption in Australia, 2017&#8211;2024. <a href="https://www.statista.com/topics/4615/coffee-market-in-australia/" target="_blank" rel="noopener">statista.com</a></li>
+            <li><strong>Roy Morgan Research</strong> &#8212; Coffee drinking habits in Australia, 2023. <a href="https://www.roymorgan.com" target="_blank" rel="noopener">roymorgan.com</a></li>
+            <li><strong>Square Australia</strong> &#8212; Coffee sales and consumer preference data, 2019&#8211;2023. <a href="https://squareup.com/au" target="_blank" rel="noopener">squareup.com/au</a></li>
+            <li><strong>Finder Australia / Numbeo</strong> &#8212; Average coffee prices by city, 2024. <a href="https://www.finder.com.au" target="_blank" rel="noopener">finder.com.au</a></li>
+            <li><strong>Geographic data</strong> &#8212; Australian state boundaries: <a href="https://github.com/rowanhogan/australian-states" target="_blank" rel="noopener">rowanhogan/australian-states</a>. World countries: <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener">world-atlas (TopoJSON)</a>.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /page-wrapper -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
