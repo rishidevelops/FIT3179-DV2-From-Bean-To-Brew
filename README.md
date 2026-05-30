@@ -113,12 +113,6 @@ All charts were designed and built from scratch. The project uses the following 
 
 ---
 
-## AI Acknowledgement
-
-AI tools (Claude by Anthropic) were used for grammar and style checking of narrative text, and for coding assistance with Vega-Lite specifications and SVG chart implementations. All visualisation design decisions, data selection, story structure, and editorial choices are the author's own work.
-
----
-
 ## Licence
 
 All visualisation designs are the author's own. Data remains the property of the respective sources listed above. Geographic boundary data is used under open licence (MIT / CC).
