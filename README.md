@@ -1,12 +1,12 @@
 # From Bean to Brew: How Coffee Became Australia's Favourite Obsession
 
-**FIT2179 Data Visualisation 2 — Monash University, Semester 1, 2026**
+**FIT2179 Data Visualisation 2 Monash University, Semester 1, 2026**
 **Author:** Rishi
 **Published:** May 2026
 
 ---
 
-## Live Visualisation
+## Visualisation
 
 **[https://rishidevelops.github.io/FIT3179-DV2-From-Bean-To-Brew/](https://rishidevelops.github.io/FIT3179-DV2-From-Bean-To-Brew/)**
 
@@ -14,7 +14,7 @@
 
 ## Overview
 
-*From Bean to Brew* is a data-driven narrative exploring Australia's coffee culture — from the bean farms of Brazil and Ethiopia to the 55,000+ cafes lining Australian streets. The visualisation traces the full arc of the story: how consumption has grown, where the beans come from, what Australians order, how much they pay, and where the market is heading.
+*From Bean to Brew* is a data-driven narrative exploring Australia's coffee culture  from the bean farms of Brazil and Ethiopia to the 55,000+ cafes lining Australian streets. The visualisation traces the full arc of the story: how consumption has grown, where the beans come from, what Australians order, how much they pay, and where the market is heading.
 
 The project is structured as a single scrollable web page divided into nine chapters, each combining Vega-Lite diagrams, custom SVG charts, and narrative text to guide the reader through an interconnected story.
 
@@ -53,13 +53,13 @@ All charts were designed and built from scratch. The project uses the following 
 - Connected scatterplot (vis16)
 
 **Custom SVG / JavaScript charts:**
-- Radial bar chart (clock face) — vis2
-- Isotype unit dot plot — vis3
-- Small Multiple State Cards — vis5
-- Bean Origin Flight Map with arc lines — vis10
-- Coffee Culture Network chord diagram — vis-chord
-- Coffee Journey Sankey (4-column) — vis-sankey
-- Roast-to-Cup Pipeline Sankey — vis12
+- Radial bar chart (clock face)  vis2
+- Isotype unit dot plot  vis3
+- Small Multiple State Cards  vis5
+- Bean Origin Flight Map with arc lines  vis10
+- Coffee Culture Network chord diagram  vis-chord
+- Coffee Journey Sankey (4-column)  vis-sankey
+- Roast-to-Cup Pipeline Sankey  vis12
 
 **Geographic maps:**
 - Australian states choropleth (vis4)
