@@ -591,13 +591,6 @@ body::before {
 
 /*Note: - Improve text labels*/
 
-/* ════════════════════════════════════════
-   ALIGNMENT FIXES
-   All Vega charts fill their container
-   correctly. Custom SVG charts get a fixed
-   min-height so they never collapse.
-════════════════════════════════════════ */
-
 /* Every vega-embed div fills its parent */
 .vega-chart { width: 100%; }
 .vega-chart .vega-embed { width: 100% !important; display: block; }
